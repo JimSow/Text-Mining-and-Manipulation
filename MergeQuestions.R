@@ -20,14 +20,6 @@ head(Ques)
 sub.list <- split(submitters, rownames(submitters))
 length(sub.list)
 sub.list[1]
-## tryID <- sub.list$'538'$Session_UserID
-## as.character(tryID)
-
-## demo$Shoe_Tower_Session_UserID == as.character(tryID)
-## pos <- match(as.character(tryID),demo$Shoe_Tower_Session_UserID)
-## matched <- demo[demo$Shoe_Tower_Session_UserID == as.character(tryID),1:6]
-## matched
-## cbind(sub.list$'1',demo[pos,])
 
 consolida <- function(row){
     sesoID <- row$Coursera_UserID
@@ -63,35 +55,35 @@ boxplot(height,xlab="shoe tower height")
 hist(height)
 ## qqnorm(height)
 
-numshoes <- as.numeric(as.character(combined$NumShoes))
-summary(numshoes)
-boxplot(numshoes)
-hist(numshoes)
+## numshoes <- as.numeric(as.character(combined$NumShoes))
+## summary(numshoes)
+## boxplot(numshoes)
+## hist(numshoes)
 
 
-T.value <- as.numeric(as.character(combined$T.VALUE))
-summary(T.value)
-boxplot(T.value)
-hist(T.value)
+## T.value <- as.numeric(as.character(combined$T.VALUE))
+## summary(T.value)
+## boxplot(T.value)
+## hist(T.value)
 
-betf.rate <- as.numeric(as.character(combined$betf.rate))
-boxplot(betf.rate)
-hist(betf.rate)
+## betf.rate <- as.numeric(as.character(combined$betf.rate))
+## boxplot(betf.rate)
+## hist(betf.rate)
 
-crtv.rate <- as.numeric(as.character(combined$crtv.rate))
-boxplot(crtv.rate)
-hist(crtv.rate)
+## crtv.rate <- as.numeric(as.character(combined$crtv.rate))
+## boxplot(crtv.rate)
+## hist(crtv.rate)
 
-Country <- combined$Country
-table(Country)
-hist(table(Country))
-## pie(Country)
-Gender <- combined$Gen_der
-summary(Gender)
-pie(table(Gender))
-## Occupation <- combined$Occupation
-Score <- as.numeric(as.character(combined$Score))
-summary(Score)
-boxplot(Score)
-hist(Score)
+## Country <- combined$Country
+## table(Country)
+## hist(table(Country))
+## ## pie(Country)
+## Gender <- combined$Gen_der
+## summary(Gender)
+## pie(table(Gender))
+## ## Occupation <- combined$Occupation
+## Score <- as.numeric(as.character(combined$Score))
+## summary(Score)
+## boxplot(Score)
+## hist(Score)
 
